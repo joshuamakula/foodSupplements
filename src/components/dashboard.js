@@ -69,14 +69,14 @@ const Dashboard = () => {
                 </ul>
             </div>
             {selectedCustomer && (
-                <div className="dashbord-table">
+                <div className="dashbord-table user-register">
                     <h3>Selected Customer</h3>
                     <p>Name: {selectedCustomer.name}</p>
                     <p>Status: {selectedCustomer.status}</p>
                     <button onClick={() => approveCustomer(selectedCustomer)}>
                         Approve
-                    </button>
-                    <button onClick={() => rejectCustomer(selectedCustomer)}>
+                    </button> <br/><br/>
+                    <button onClick={() => rejectCustomer(selectedCustomer)} style={{background:'red', border:'1px solid red'}}>
                         Reject
                     </button>
                 </div>
